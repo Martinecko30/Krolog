@@ -1,0 +1,7 @@
+-- Příklady bez indexů: --
+pravidlo ~ matka(X, Y) <= zena(X) & rodic(X,Y), otazka ~ matka(alice, Z),
+    connect ~ []                                                          -> [zena(X), rodic(X, Y)], connect[({X}, alice), ({Y, Z}, None)]
+pravidlo ~ matka(X, Y) <= zena(X) & rodic(X,Y), otazka ~ matka(alice, Z),
+    connect[{Z}, cecil]                                                   -> [zena(X), rodic(X, Y)], connect[({X}, alice), ({Y, Z}, cecil)]
+pravidlo ~ matka(X, Y) <= zena(X) & rodic(X,Y), otazka ~ matka(Z, Z),        #sice je to nesmysl, ale to zjistíme až později
+    connect[{Z}, cecil]                                                   -> [zena(X), rodic(X, Y)], connect[({X, Y, Z}, cecil)]

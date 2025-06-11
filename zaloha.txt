@@ -1,0 +1,20 @@
+!vhodny(X) <= penize(X) & svaly(X)
+.vhodny(nejakej_nouma)
+
+.penize(karel)
+.penize(milos)
+.penize(honza)
+
+.svaly(tomas)
+.svaly(honza)
+.svaly(karel)
+
+!bohac(X) <= penize(X)
+
+?vhodny(X)
+
+!matka(X, Y) <= zena(X) & rodic(X, Y)
+?matka(alice, Z)
+
+.dieta(anna, josef, david)
+?dieta(anna, X, Y)

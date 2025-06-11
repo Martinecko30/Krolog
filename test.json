@@ -1,0 +1,11 @@
+[
+  true,
+  [
+    {"X": "bob"},
+    {"X": "cecil"}
+  ],
+  [
+    {"Y": "alice"}
+  ],
+  false
+]
